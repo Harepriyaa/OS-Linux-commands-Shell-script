@@ -43,24 +43,28 @@ s.n. dasgupta
 cat < file1
 ## OUTPUT
 
+<img width="2170" height="725" alt="image1" src="https://github.com/user-attachments/assets/ebfa066a-fd79-4e75-8fdd-beb714ce438c" />
 
 
 cat < file2
 ## OUTPUT
 
+<img width="2171" height="724" alt="image2" src="https://github.com/user-attachments/assets/65798f4d-54e7-497a-bede-eccb634edcf1" />
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+ <img width="2171" height="724" alt="image3" src="https://github.com/user-attachments/assets/a98cd896-8797-4941-bd6a-f25c56efc2b2" />
 comm file1 file2
  ## OUTPUT
+
+<img width="2172" height="724" alt="image4" src="https://github.com/user-attachments/assets/5832ab2c-69ab-4eb6-9ef1-10519b0a00ae" />
+
 
  
 diff file1 file2
 ## OUTPUT
-
-
+<img width="1537" height="1023" alt="image5" src="https://github.com/user-attachments/assets/c928bdc6-00ef-4924-83ec-7c7643e9a0ee" />
 #Filters
 
 ### Create the following files file11, file22 as follows:
@@ -84,15 +88,16 @@ cut -c1-3 file11
 ## OUTPUT
 
 
-
+<img width="1859" height="846" alt="image6" src="https://github.com/user-attachments/assets/66d7dde5-60f5-41b1-ade4-b0c7f7d1df0c" />
 
 cut -d "|" -f 1 file22
 ## OUTPUT
 
 
-
+<img width="1859" height="846" alt="image7" src="https://github.com/user-attachments/assets/fd9bd5c7-82b4-403f-b536-ca710835c832" />
 cut -d "|" -f 2 file22
 ## OUTPUT
+<img width="2170" height="725" alt="image8" src="https://github.com/user-attachments/assets/e246c7a5-bb4a-4f04-93da-192da09f1586" />
 
 
 cat < newfile 
@@ -107,6 +112,8 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
+<img width="1724" height="912" alt="image9" src="https://github.com/user-attachments/assets/c8f42d83-0435-40b0-912c-662a8770b793" />
+
 
 
 
@@ -114,34 +121,38 @@ grep hello newfile
 ## OUTPUT
 
 
+<img width="1827" height="861" alt="image10" src="https://github.com/user-attachments/assets/b9b26df5-837e-4425-98d4-0e229587fc59" />
+
 
 
 grep -v hello newfile 
 ## OUTPUT
-
-
+<img width="1863" height="844" alt="image11" src="https://github.com/user-attachments/assets/6d0d8fab-6c11-4175-9300-5659b1eb4969" />
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
+
+<img width="1745" height="901" alt="image12" src="https://github.com/user-attachments/assets/9b166456-a219-4fb9-a00c-63c2460400ee" />
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
-
+<img width="1828" height="860" alt="image13" src="https://github.com/user-attachments/assets/72f3f236-f72f-4b17-8eea-7f4a458867f1" />
 
 
 grep -R ubuntu /etc
 ## OUTPUT
 
+<img width="1658" height="949" alt="image14" src="https://github.com/user-attachments/assets/da85c805-2885-4e25-a63b-967840a89b96" />
 
 
 grep -w -n world newfile   
 ## OUTPUT
 
-
+<img width="1692" height="930" alt="image15" src="https://github.com/user-attachments/assets/861ddd17-a8bb-40fd-8c6d-096d24a4f62e" />
 cat < newfile 
 ```
 Hello world
@@ -165,14 +176,19 @@ egrep -w 'Hello|hello' newfile
 ## OUTPUT
 
 
+<img width="1488" height="1057" alt="image16" src="https://github.com/user-attachments/assets/97569206-00d7-4809-b80e-182f933c2082" />
+
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
+<img width="1559" height="1009" alt="image17" src="https://github.com/user-attachments/assets/d4bee7ed-fe56-453a-b460-502ff28f12e5" />
+
 
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
+<img width="1545" height="1018" alt="image18" src="https://github.com/user-attachments/assets/84b5eea9-82bd-4788-9d97-f3bcbe5fc0d2" />
 
 
 
@@ -180,19 +196,22 @@ egrep -w '(H|h)ell[a-z]' newfile
 egrep '(^hello)' newfile 
 ## OUTPUT
 
-
-
+<img width="1738" height="905" alt="image19" src="https://github.com/user-attachments/assets/74b05dea-8718-4d6a-a8ed-7f93af180679" />
 egrep '(world$)' newfile 
 ## OUTPUT
+
+<img width="1617" height="973" alt="image20" src="https://github.com/user-attachments/assets/6b41b601-9cad-40ba-a986-bae5e15ef9c7" />
+
 
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
-
+<img width="1617" height="973" alt="image 26" src="https://github.com/user-attachments/assets/2977ea9c-baf1-4b31-938a-a2d1419aee4c" />
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
+<img width="1519" height="1035" alt="image25" src="https://github.com/user-attachments/assets/b14a2c32-afbb-401e-8631-02c0f5eb9283" />
 
 
 
